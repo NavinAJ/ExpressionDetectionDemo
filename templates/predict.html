@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Prediction</title>
+</head>
+
+<body>
+<h1 align='center'>Expression</h1>
+<center><img src="{{url_for('send_image',filename=image_name)}}" height="500",width="500"/></center>
+{% if message %}
+<h1 align='center'>The predicted expression is : <font color = "orange",face="verdana", size=20>{{message}}</font></h1> 
+{% endif %}
+<form action="/refresh" method="post">
+    <center><button class="button">Try another expression</button></center>
+</form>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>
