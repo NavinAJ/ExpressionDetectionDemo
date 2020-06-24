@@ -11,4 +11,4 @@ matplotlib>=1.4.3
 pandas>=0.19
 opencv-python-headless
 Keras==2.1.5
-tensorflow==1.12.1
+tensorflow==1.15.2
